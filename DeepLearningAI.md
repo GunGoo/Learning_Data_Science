@@ -42,3 +42,28 @@
 
 ## Logistic Regression - Binary Classification
 
+- Linear Regression $\to\hat{y}= w^tx+b$
+- Logistic Regression = $Sigmoid(z) \ where \ z=(w^tx+b)$
+  - $Sigmoid = 1/(1+e^{-z})$
+    - If z is large positive, $Sigmoid(z) = \ close \ to \ 1$
+    - If z is large negative, $Sigmoid(z) = \ close \ to \ 0$
+  - Logistic Regression에서 Loss Function을 Squared Error를 사용해도되지만, 나중에 Gradient Discent를 사용하면 Local Minimum밖에 찾지 못한다.
+  - 그러므로 Logistic Regression에서는 다음과 같은 Loss Function을 사용한다.
+    -  Loss Function -> 각각의 Training Example에 관한 Loss
+      - $L(\hat{y},y) = -(ylog\hat{y}+(1-y)log(1-\hat{y}))$
+        - $if\ y=1: L(\hat{y},y)=-log\hat{y}$ <- 최대한 크게
+        - $if\ y=0: L(\hat{y},y)=-log(1-\hat{y})$ <- 최대한 작게
+    - Cost Function -> 전체 Training set에 관한 Loss
+      - $J(w,b) = 1/m \sum{L(\hat{y}^{(i)},y^{(i)})}=-1/m\sum{(y^{(i)}log\hat{y}^{(i)}+(1-y^{(i)})log(1-\hat{y}^{(i)}))}$
+      - 
+
+
+
+
+
+
+
+
+
+
+
