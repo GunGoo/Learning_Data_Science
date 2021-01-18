@@ -25,6 +25,20 @@
       2. **Vanishing Gradient - 활성화 함수값이 0보다 클때**
          - Sigmoid를 사용할 경우, backpropagation은 chain rule을 사용하기 때문에, sigmoid함수의 특성상 값이 0~1이되기때문에 결국에 값들이 layer를 통해 sigmoid함수를 지나갈수록 작아져 0에 converge(수렴)하게 된다.
          - **결국 layer깊이가 깊어질수록 값이 굉장히 작아져서 결과에 영향을 끼치지 않아** 예측하기 힘든 현상을 가져오게됨.
+         - Sigmoid함수는 좌우로 나갈수록 기울기 (gradient)가 0에 converge하게된다. 그러므로 learning speed가 매우 느리다. layer가많을수록 심각해짐.
 
     
+
+## Supervised Learning with Neural Networks
+
+- Types of Supervised Learning with NN
+  - Standard Neural Network: Real Estate, Online Advertising
+  - CNN (Convolutional Neural Networks): image
+  - RNN (Recurrent Neural Network): Sequence data (audio) - time series, Language (translation)
+- Structured Data: Database
+- Unstructured Data: audio, image, text
+
+# Week 2
+
+## Logistic Regression - Binary Classification
 
