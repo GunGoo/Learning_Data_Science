@@ -55,7 +55,7 @@
         - $if\ y=0: L(\hat{y},y)=-log(1-\hat{y})$ <- 최대한 작게
     - Cost Function -> 전체 Training set에 관한 Loss
       - $J(w,b) = 1/m \sum{L(\hat{y}^{(i)},y^{(i)})}=-1/m\sum{(y^{(i)}log\hat{y}^{(i)}+(1-y^{(i)})log(1-\hat{y}^{(i)}))}$
-      - 
+- 
 
 
 
