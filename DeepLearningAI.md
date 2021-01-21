@@ -55,11 +55,23 @@
         - $if\ y=0: L(\hat{y},y)=-log(1-\hat{y})$ <- 최대한 작게
     - Cost Function -> 전체 Training set에 관한 Loss
       - $J(w,b) = 1/m \sum{L(\hat{y}^{(i)},y^{(i)})}=-1/m\sum{(y^{(i)}log\hat{y}^{(i)}+(1-y^{(i)})log(1-\hat{y}^{(i)}))}$
-- 
 
+## Gradient Descent
 
+- We want to minimize the above J (cost function = average of sum of loss function).
+  - find w, b that minimize J(w,b)
+- W를 계속 업데이트하면서 0으로 converge하도록 만들어야함.
+- Updating W = W - a(dw), dw = derivative of w
+  - d*J(w,b) / d*w의 의미는 w방향으로 J(w,b)함수가 얼마나 기울었는지 나타낸다. 
+  - W를 미분한 dw는 현재 w의 기울기를 나타내는데 이 기울기가 양수라면 W를 기울기 만큼 빼줌으로써 가장 낮은 구간으로 내려가게됨.
+  - a는 learning rate이다. learning rate는 한 point에서 미분하여 구한 기울기가 너무 크면 W를 업데이트할때 너무 큰 변동성을 주기때문에 변동성을 줄이기 위함이다.
+- Updating b도 똑같다.
 
+## Derivative (Slope) 기울기
 
+- ​	Slope = 기울기 = Derivative = 미분
+  - = height/width
+  - 
 
 
 
