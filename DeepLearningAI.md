@@ -71,7 +71,7 @@
 
 - ​	Slope = 기울기 = Derivative = 미분
   - = height/width
-  - 
+  - 11
 
 
 
