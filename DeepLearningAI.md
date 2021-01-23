@@ -71,9 +71,14 @@
 
 - ​	Slope = 기울기 = Derivative = 미분
   - = height/width
-  - 11
 
+## Backpropagation (역전파)
 
+- Chain Rule을 이용하여 미분 값을 얻을 수 있다.
+- Forward Propagation할때 Local Gradient를 미리 계산해둔다.
+- 저장해둔 Local Gradient와 Back Propagation하면서 구한 Global Tradient를 곱하여 최종 미분 값을 구한다.
+
+## Vectorization - For loop을 없애기 위해서 필요함! for loop은 execution time을 길게만듬.
 
 
 
