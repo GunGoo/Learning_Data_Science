@@ -78,9 +78,12 @@
 - Forward Propagation할때 Local Gradient를 미리 계산해둔다.
 - 저장해둔 Local Gradient와 Back Propagation하면서 구한 Global Tradient를 곱하여 최종 미분 값을 구한다.
 
-## Vectorization - For loop을 없애기 위해서 필요함! for loop은 execution time을 길게만듬.
+## Vectorization
 
-
+- Weight와 bias를 업데이트하는 코드를 작성할때 필요한 for loop을 없애기 위한 기술.
+- for loop으로 계산하는 것보다 vectorization으로 (np.dot(w,x)) 계산하는 것이 훨씬 빠름
+- CPU and GPU 둘다 SIMD - Single Instruction Multiple Data 기술을 사용하는데, 이것은 python이 parallelism을 빨리 수행하게 도와준다. 
+  - Vectorize해서 계산하면 paralle하게 계산함으로 빠르다.
 
 
 
