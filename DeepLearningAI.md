@@ -1,6 +1,6 @@
 ----
 
-layout: single 
+b b layout: single 
 
 title: DeepLearningAI Study Notes
 
@@ -126,38 +126,7 @@ Vectorize해서 계산하면 paralle하게 계산함으로 빠르다.
 
 numpy에서 vector계산할 때 빠르게 해주는 기술
 
-(m,n)차원 벡터에 (1,n)차원 벡터를 더하면 자동으로 (1,n)벡터에 m을 곱해서 (m,n)으로 만들어 더해주는 것.....
-
-da
-
-as
-
-d
-
-d
-
-d
-
-a	s
-
-​	s
-
-a
-
-s
+(m,n)차원 벡터에 (1,n)차원 벡터를 더하면 자동으로 (1,n)벡터에 m을 곱해서 (m,n)으로 만들어 더해주는 것.
 
 
-
-
-a
-
-s
-
-a
-
-a
-
-n
-
-ㅏ
 
