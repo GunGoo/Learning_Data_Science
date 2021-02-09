@@ -173,3 +173,20 @@ Sigmoid function은 더이상 사용되지않는다. tanh가 언제나 우월함
 
 딥러닝은 non-linear activation function을 사용함.
 
+선형함수는 y 예측값이 Real number일때 출력층에서 사용 할 쑤도있음.
+
+
+
+### Derivatives of Activation Functions
+
+$$
+sigmoid(z)=a(1-a)\\
+tanh(z)=1-(tanh(z))^2=1-a^2\\
+ReLu(z)=max(0,z) = 0,\ if\ z <0, \\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1,\ if\ z > 0,\ \\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ undefined\ otherwise\\
+Leaky\ ReLu(z)=max(0.01z,z) = 0.01z,\ if\ z <0, \\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1,\ if\ z > 0,\ \\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ undefined\ otherwise
+$$
+
