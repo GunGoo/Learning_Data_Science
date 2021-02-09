@@ -8,7 +8,13 @@ title: DeepLearningAI Study Notes
 
 ### Activation Function in Neural Network
 
-### **[ReLu] (Rectified Linear Unit)**
+## **[ReLu] (Rectified Linear Unit)**
+
+$$
+a = max(0,z)
+$$
+
+
 
 f(x) = x (x > ), 0 (x <= 0)
 
@@ -19,6 +25,10 @@ f(x) = 0, \ otherwise
 $$
 
 ### **ReLu를 사용하는 이유?**
+
+다른 activation function들 보다 학습 속도가 더 빠르다. 
+
+기울기가 0과 차이가 많이 나기때문.
 
 **1. Sparsity (벡터를 표시하는 값들 중 0이 많은 것) - 활성화 함수값이 0보다 작을때 (one hot vector)**
 
@@ -38,7 +48,11 @@ Sigmoid를 사용할 경우, backpropagation은 chain rule을 사용하기 때�
 
 Sigmoid함수는 좌우로 나갈수록 기울기 (gradient)가 0에 converge하게된다. 그러므로 learning speed가 매우 느리다. layer가많을수록 심각해짐.
 
-### Supervised Learning with Neural Networks
+### ReLu의 단점?
+
+z가 음수일 때 미분값이 0인 것.
+
+## Supervised Learning with Neural Networks
 
 Types of Supervised Learning with NN
 
@@ -52,7 +66,7 @@ Structured Data: Database
 
 Unstructured Data: audio, image, text
 
-### Logistic Regression - Binary Classification
+## Logistic Regression - Binary Classification
 
 Linear Regression $$\to\hat{y}= w^tx+b$$
 
@@ -129,4 +143,33 @@ numpy에서 vector계산할 때 빠르게 해주는 기술
 (m,n)차원 벡터에 (1,n)차원 벡터를 더하면 자동으로 (1,n)벡터에 m을 곱해서 (m,n)으로 만들어 더해주는 것.
 
 
+
+
+
+## Activation Function
+
+탄젠트h (tanh)가 sigmoid보다 언제나 좋은 성능을 보인다.
+$$
+tanh(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}
+$$
+tanh는 -1 과 1사이의 값을 같는데 이는 0을 평균값으로 가져서 데이터를 중심으로 위치시키는 효과가있기때문
+
+- 다음 층의 학습이 더 쉽게 이루어짐.
+
+Sigmoid function은 더이상 사용되지않는다. tanh가 언제나 우월함.
+
+하지만 output layer에서는 sigmoid사용하여야함
+
+왠만하면 ReLu를 사용함.
+
+
+
+### Pros and Cons of Activation Functions
+
+- sigmoid: dont use it unless output layer
+- Tanh: superior to sigmoid
+- ReLu: most commonly used
+- Leaky ReLu: maybe
+
+딥러닝은 non-linear activation function을 사용함.
 
