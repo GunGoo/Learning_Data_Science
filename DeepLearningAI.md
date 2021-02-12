@@ -190,3 +190,18 @@ Leaky\ ReLu(z)=max(0.01z,z) = 0.01z,\ if\ z <0, \\
 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ undefined\ otherwise
 $$
 
+### Initializing W to all Zeros causes problem
+
+- hidden units become completely identical
+- 2개의 숨겨진 유닛 모두 똑같은 함수를 산출, 결과값 유닛에 똑같은 영향을 줌.
+- Induction으로 증명가능
+
+
+
+## Week 3 Quiz
+
+The tanh activation usually works better than sigmoid activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer. 
+
+You decide to initialize the weights and biases to be zero. Which of the following statements is true?
+
+- Each neuron in the first hidden layer will perform the same computation. So even after multiple iterations of gradient descent each neuron in the layer will be computing the same thing as other neurons. 
