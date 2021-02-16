@@ -1,11 +1,3 @@
-----
-
-b b layout: single 
-
-title: DeepLearningAI Study Notes
-
-----
-
 ### Activation Function in Neural Network
 
 ## **[ReLu] (Rectified Linear Unit)**
