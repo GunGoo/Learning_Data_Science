@@ -1,2 +1,0 @@
-## TensorFlow Certificate Study
-
