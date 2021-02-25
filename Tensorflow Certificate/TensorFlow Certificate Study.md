@@ -26,3 +26,24 @@
   - Stride (필터를 얼마나 움직일것인가)
 
 **ImageGenerator (TensorFlow)**: automatically adjust the size of input pictures.
+
+-  ImageGenerator being used -- and this is coded to read images from subdirectories, and automatically label them from the name of that subdirectory. 
+- 데이터양이 부족할때 이미지를 변형하여 새로운 데이터셋을 만들어준다.
+
+### Understanding Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss and all those confusing names
+
+#### Activation Functions
+
+**Sigmoid:** squashed a vector in the range (0,1)
+
+**Softmax:** is a function, not a loss. It squashes a vector in the range (0,1) and all the resulting elements add up to 1. Can be interpreted as class probabilities.
+
+**ReLu**: x if x > 0, else 0 
+
+#### Loss Functions
+
+**Cross-Entropy Loss:** Activation function (Sigmoid, Softmax) is applied to the scores before the CE loss computation. 
+
+**Categorical Cross-Entropy Loss:** Also called Softmax Loss which is (Softmax Activation + Cross-Entropy Loss). Used for multi-class classification.
+
+**Binary Cross-Entropy Loss:** Also called Sigmoid Cross-ENtropy loss which is (Sigmoid Activation + Cross-Entropy). Unlike Softmax loss, independent for each vector class, so used for multi-label classification. 
